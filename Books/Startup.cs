@@ -32,7 +32,7 @@ namespace Books
         {
 
             services.AddControllers();
-            //db context file
+            //configure db context file
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
             services.AddSwaggerGen(c =>
             {
